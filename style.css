@@ -237,6 +237,10 @@ main {
     max-width: 643px;
 }
 
+.row{
+    display: flex;
+}
+
 .dest-bgi {
     height: 300px;
     background-repeat: no-repeat;
@@ -459,6 +463,33 @@ form input::placeholder {
     font-size: 15px;
     font-weight: 400;
     margin-left: 15px;
+}
+
+.client-img {
+    background-image: url('./images/client.jpg');
+    width: auto;
+    height: 500px;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-img .title {
+    color: white;
+    text-align: center;
+}
+
+.client-img .des {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    max-width: 300px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
 }
 
 .news {
@@ -791,6 +822,14 @@ footer hr {
         font-size: 15px;
         font-weight: 400;
         margin-left: 15px;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+    
+    #none {
+        display: none;
     }
 
     .news {
